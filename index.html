@@ -312,16 +312,16 @@
         <div class="contain">
             <div class="form2 neon-border">
                 <form method="get">
-                    <fieldset class="frm2">
-                        <legend>Personal Data</legend>
-                        <label for="name">Name: </label>
-                        <input class="inputs" id="name" type="text" placeholder="Name">
-                        <label for="mail">E-Mail: </label>
-                        <input class="inputs" id="mail" type="text" placeholder="EMail">
-                        <label for="color">Password: </label>
-                        <input class="inputs" id="pw" type="password" placeholder="Password">
-                        <input class="submit inputs" id="submit" type="button" value="Submit" onclick="Click()">
-                    </fieldset>
+                   <fieldset class="frm2">
+    <legend>Personal Data</legend>
+    <label for="name">Name: </label>
+    <input class="inputs" id="name" type="text" placeholder="Name">
+    <label for="mail">E-Mail: </label>
+    <input class="inputs" id="mail" type="text" placeholder="EMail">
+    <label for="color">Password: </label>
+    <input class="inputs" id="pw" type="password" placeholder="Password" onkeydown="checkEnterKey(event)">
+    <input class="submit inputs" id="submit" type="button" value="Submit" onclick="Click()">
+</fieldset>
                 </form>
             </div>
 
