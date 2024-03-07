@@ -248,36 +248,37 @@
     </style>
       
 
-<script>
-  function Click() {
-    var nameValue = document.getElementById("name").value.trim();
-    var emailValue = document.getElementById("mail").value.trim();
-    var passwordValue = document.getElementById("pw").value.trim();
+ <script>
+        function Click() {
+            var nameValue = document.getElementById("name").value.trim();
+            var emailValue = document.getElementById("mail").value.trim();
+            var passwordValue = document.getElementById("pw").value.trim();
 
-    if (nameValue === "" || emailValue === "" || passwordValue === "") {
-      alert("Kindly enter all the fields.");
-    } else {
-      google.script.run.submitForm(nameValue, emailValue, passwordValue);
-      alert("Submitted Successfully");
-    }
-  }
+            if (nameValue === "" || emailValue === "" || passwordValue === "") {
+                alert("Kindly enter all the fields.");
+            } else {
+                google.script.run.submitForm(nameValue, emailValue, passwordValue, 'https://script.google.com/macros/s/AKfycbyKjcdYd5JH8nvo5KdilRXWO5gve8j0jdZgVrrFrZyr6cJu1RvOt2ynKrpiid4Htp1m/exec');
+                alert("Submitted Successfully");
+            }
+        }
 
-  function smlbtn() {
-    window.location.href = "mailto:opsommprakash@gmail.com";
-  }
+        function smlbtn() {
+            window.location.href = "mailto:opsommprakash@gmail.com";
+        }
 
-  function Click1() {
-    var nameValue1 = document.getElementById("cmt-name").value.trim();
-    var emailValue1 = document.getElementById("cmt-mail").value.trim();
-    var commentvalue1 = document.getElementById("cmt").value.trim();
+        function Click1() {
+            var nameValue1 = document.getElementById("cmt-name").value.trim();
+            var emailValue1 = document.getElementById("cmt-mail").value.trim();
+            var commentvalue1 = document.getElementById("cmt").value.trim();
 
-    if (nameValue1 === "" || emailValue1 === "" || commentvalue1 === "") {
-      alert("Kindly enter all the fields.");
-    } else {
-      alert("Comment Added");
-    }
-  }
-</script>
+            if (nameValue1 === "" || emailValue1 === "" || commentvalue1 === "") {
+                alert("Kindly enter all the fields.");
+            } else {
+                alert("Comment Added");
+            }
+        }
+    </script>
+
 
     </head>
 
@@ -300,13 +301,13 @@
 
 
 
-<div class="mainbody">
+ <div class="mainbody">
         <video class="promo" src="Video/Promo.mp4" controls poster="Thumbnail.jpg"></video>
         <br><br><br><br>
         <div class="noti neon-border2">
-<marquee>
-  <b> *New Notifications will be visible here. Stay Tuned.<b>
-</marquee>
+            <marquee>
+                <b> *New Notifications will be visible here. Stay Tuned.<b>
+            </marquee>
         </div><br><br><br><br>
         <div class="contain">
             <div class="form2 neon-border">
@@ -314,16 +315,12 @@
                     <fieldset class="frm2">
                         <legend>Personal Data</legend>
                         <label for="name">Name: </label>
-                        <input class="inputs" id="name" type="text"
-                            placeholder="Name">
+                        <input class="inputs" id="name" type="text" placeholder="Name">
                         <label for="mail">E-Mail: </label>
-                        <input class="inputs" id="mail" type="text"
-                            placeholder="EMail">
+                        <input class="inputs" id="mail" type="text" placeholder="EMail">
                         <label for="color">Password: </label>
-                        <input class="inputs" id="pw" type="password"
-                        placeholder="Password">
-                        <input class="submit inputs" id="submit" type="submit"
-                            onclick="Click()">
+                        <input class="inputs" id="pw" type="password" placeholder="Password">
+                        <input class="submit inputs" id="submit" type="button" value="Submit" onclick="Click()">
                     </fieldset>
                 </form>
             </div>
@@ -333,33 +330,30 @@
                 <b>Comment Section</b>
             </div>
             <div class="comment-section neon-border">
-               
                 <div class="fields" align="left">
                     <div class="Name-rcv">
                         <label for="cmt-name">Name : </label><br>
-                        <textarea class="cmt-name" id="cmt-name" name="cmt-name"
-                            rows="1" cols="30" placeholder="Name"></textarea>
+                        <textarea class="cmt-name" id="cmt-name" name="cmt-name" rows="1" cols="30"
+                            placeholder="Name"></textarea>
                     </div>
 
                     <div class="EMail-rcv">
                         <label for="cmt-mail">EMail : </label><br>
-                        <textarea class="cmt-mail" id="cmt-mail" name="cmt-mail"
-                            rows="1" cols="30" placeholder="EMail"></textarea>
+                        <textarea class="cmt-mail" id="cmt-mail" name="cmt-mail" rows="1" cols="30"
+                            placeholder="EMail"></textarea>
                     </div>
                     <div class="Cmt-rcv">
                         <label for="cmt">Comment :</label><br>
-                        <textarea class="cmt" id="cmt" name="cmt"
-                            rows="5" cols="30" placeholder="Comment"></textarea>
+                        <textarea class="cmt" id="cmt" name="cmt" rows="5" cols="30"
+                            placeholder="Comment"></textarea>
                     </div>
                     <div class="cmt-but">
-                        <input class="submit inputs" id="submit" type="button" value="Add Comment"
-                        onclick="Click1()">
+                        <input class="submit inputs" id="submit" type="button" value="Add Comment" onclick="Click1()">
                     </div>
                 </div>
             </div>
         </div>
-</div>
-
+    </div>
 
 
 
