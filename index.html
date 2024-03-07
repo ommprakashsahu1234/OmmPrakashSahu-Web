@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Omm Prakash Sahu</title>
+        <link rel="icon" href="Image/Logo.png" type="image/png" />
+
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Image/bg3.jpg');
+            background-size:cover;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+        }
+        
+        body img
+        {
+           width: 10%;
+           height: auto;
+        }
+
+        header {
+            color: yellow;
+            background-color: rgb(22, 45, 194);
+            text-align: left;
+            padding: 10px;
+        }
+        
+        .promo {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        
+        
+        @media only screen and (max-width:600px) {
+            header {
+                font-size: 14px;
+            }
+        }
+        
+        div>a>img.sme {
+            width: 40px;
+            border-radius: 50%;
+        }
+        
+        footer {
+            background-color: blue;
+        }
+        
+        legend {
+            color: red;
+        }
+        
+        fieldset {
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+            border-color: aqua;
+            color: rgb(7, 4, 41);
+            max-width: 300px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        input {
+            margin-bottom: 10px;
+            width: 200px;
+            border-color: blue;
+        }
+        
+        .submit {
+            border-color: black;
+            width: 250px;
+            height: 50px;
+            font-size: 30px;
+            margin: 0 auto;
+            background-color: rgb(153, 255, 0);
+        }
+
+        .inputs
+        {
+            border-radius: 20px;
+        }
+
+        .form2 {
+            padding: 10px;
+            margin: 10px;
+            width:320px;
+            border-radius: 30px;
+            border: 3px solid rgb(255, 0, 0);
+            background-image: url('Image/bg2.jpg');
+            background-size: 370px auto;
+            background-repeat: no-repeat;
+        }
+        
+        .form2 img {
+            border-radius: 30px;
+            width: 320px;
+            height: 350px;
+        }
+        
+        
+        
+        
+        .frm2{
+            width:3px;
+            color:aqua;
+            border-radius: 30px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            text-shadow: 10px 5px 15px  rgb(11, 7, 66);
+        }
+
+        .comment-section
+        {
+            border: 3px solid rgb(255, 0, 0);
+            width: 320px;
+            padding: 10px;
+            margin: 10px;
+            justify-content: left;
+            font-style: italic;
+            background-image: url('Image/bg1.jpg');
+            border-radius: 15px;
+            background-repeat: no-repeat;
+            background-size: 350px 350px;
+            color:aqua;
+            background-position: left;
+            justify-content: left;
+           
+        }
+
+        .comment-section img
+        {
+            width:350px;
+            border-radius: 30px;
+            width: 120%;
+            height: 350px;
+            overflow: hidden;
+            animation: lazy-load 0.001s forwards;
+        }
+        .EMail-rcv,
+        .Name-rcv,
+        .Cmt-rcv
+        {
+            padding: 5px;
+            justify-content: left;
+            background-position: left;
+        }
+
+        .cmt-name,
+        .cmt-mail,
+        .cmt
+        {
+            border: 2px solid blue;
+            border-radius: 10px;
+            background-color: transparent;
+            backdrop-filter: blur(2px);
+            color:white;
+        }
+
+        .neon-border:hover{
+            filter: brightness(1.5) drop-shadow(0 0 2px #0000ff6a) drop-shadow(0 0 10px #0066ff) drop-shadow(0 0 20px #41a3ff);
+        }
+        .cmt-head
+        {
+            color: aqua;
+            border: greenyellow;
+            padding: 5px;
+            margin-left: 110px;
+            border:3px solid rgb(0, 255, 0);
+            border-radius: 30px;
+            width: 125px;
+        }
+
+        .neon-border2{
+            filter: brightness(1.5) drop-shadow(0 0 2px #0000ff6a) drop-shadow(0 0 10px #0066ff) drop-shadow(0 0 20px #41a3ff);
+        }
+
+        .noti
+        {
+            backdrop-filter: blur(5px);
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:rgb(60, 255, 0);
+            border: 3px solid blue;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+          
+          .content {
+           
+            height: 1000px;
+          
+          }
+          
+          .fixed-button {
+            border: 2px solid red;
+            position: fixed;
+            bottom: 10px; 
+            right: 10px; 
+            z-index: 999;
+            color: blue;
+            background-color: rgb(17, 0, 255);
+            border-radius: 50%;
+            width: 50px; 
+            height: 50px; 
+        }
+        
+        .fixed-button img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+          
+        .pr-bt
+        {
+            margin: 20px;
+            width: 150px;
+            height: 30px;
+            background-image: linear-gradient(90deg,blue,red,green);
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+      textarea
+      {
+        max-width: 230px;
+      }
+
+      .cmt-mail,.cmt-name
+      {
+        max-height: 15px;
+      }
+      .cmt{
+        max-height: 130px;
+      }
+
+    </style>
+        <script>
+
+        function Click() {
+            var nameValue = document.getElementById("name").value.trim();
+            var emailValue = document.getElementById("mail").value.trim();
+            var colorValue = document.getElementById("color").value.trim();
+
+            if (nameValue === "" || emailValue === "" || colorValue === "") {
+                alert("Kindly enter all the fields.");
+            } else {
+                alert("Submitted Successfully");
+            }
+        }
+
+
+        function smlbtn()
+        {
+            window.location.href="mailto:opsommprakash@gmail.com";
+        }
+
+        function Click1()
+        {
+            var nameValue1 = document.getElementById("cmt-name").value.trim();
+            var emailValue1 = document.getElementById("cmt-mail").value.trim();
+            var commentvalue1 = document.getElementById("cmt").value.trim();
+
+            if (nameValue1 === "" || emailValue1 === "" || commentvalue1 === "") {
+                alert("Kindly enter all the fields.");
+            } else {
+                alert("Comment Added");
+            }
+        }
+    </script>
+    </head>
+
+    <body>
+
+        <!-- START OF HEAD -->
+
+
+
+        <header>
+            <p>Welcome to New Page</p>
+            <b>OMM PRAKASH SAHU</b>
+        </header>
+        <hr />
+
+
+
+        <!-- END OF HEAD  -->
+        <!-- START OF MAIN BODY  -->
+
+
+
+<div class="mainbody">
+        <video class="promo" src="Video/Promo.mp4" controls poster="Image/Thumbnail.jpg"></video>
+        <br><br><br><br>
+        <div class="noti neon-border2">
+<marquee>
+  <b> *New Notifications will be visible here. Stay Tuned.<b>
+</marquee>
+        </div><br><br><br><br>
+        <div class="contain">
+            <div class="form2 neon-border">
+                <form method="get">
+                    <fieldset class="frm2">
+                        <legend>Personal Data</legend>
+                        <label for="name">Name: </label>
+                        <input class="inputs" id="name" type="text"
+                            placeholder="Name">
+                        <label for="mail">E-Mail: </label>
+                        <input class="inputs" id="mail" type="text"
+                            placeholder="EMail">
+                        <label for="color">Password: </label>
+                        <input class="inputs" id="pw" type="password"
+                        placeholder="Password">
+                        <input class="submit inputs" id="submit" type="submit"
+                            onclick="Click()">
+                    </fieldset>
+                </form>
+            </div>
+
+            <br><br><br>
+            <div class="cmt-head neon-border2" align="center">
+                <b>Comment Section</b>
+            </div>
+            <div class="comment-section neon-border">
+               
+                <div class="fields" align="left">
+                    <div class="Name-rcv">
+                        <label for="cmt-name">Name : </label><br>
+                        <textarea class="cmt-name" id="cmt-name" name="cmt-name"
+                            rows="1" cols="30" placeholder="Name"></textarea>
+                    </div>
+
+                    <div class="EMail-rcv">
+                        <label for="cmt-mail">EMail : </label><br>
+                        <textarea class="cmt-mail" id="cmt-mail" name="cmt-mail"
+                            rows="1" cols="30" placeholder="EMail"></textarea>
+                    </div>
+                    <div class="Cmt-rcv">
+                        <label for="cmt">Comment :</label><br>
+                        <textarea class="cmt" id="cmt" name="cmt"
+                            rows="5" cols="30" placeholder="Comment"></textarea>
+                    </div>
+                    <div class="cmt-but">
+                        <input class="submit inputs" id="submit" type="button" value="Add Comment"
+                        onclick="Click1()">
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+        <!-- END OF MAIN BODY -->
+        <!-- START OF FOOT PART -->
+
+
+        <div class="print" align="right">
+            <button class="pr-bt neon-border2" onclick="window.print()">Print This Page</button>
+        </div>
+        <footer align="center">
+            <hr />
+            <div align="center">
+                <a href="#" target="_blank"> <img src="Image/Youtube.png"class="sme yt" /></a>
+                <a href="#"> <img src="Image/Instagram.jpeg" class="sme in" /></a>
+                <a href="#"> <img src="Image/threads.png" class="sme th" /></a>
+                <a href="#"> <img src="Image/twitter.png" class="sme tw" /></a>
+            </div>
+            <div>
+               <b> All Rights Reserved &copy;2024
+                <br>Developed By : Omm Prakash Sahu</b> </footer>
+            </div>
+            <div class="fix-btn">
+            <button class="fixed-button" onclick="smlbtn()"><img src="Image/Logo.png"></button>
+        </div>
+    </body>
+
+</html>
