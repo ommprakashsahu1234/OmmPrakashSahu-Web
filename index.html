@@ -249,18 +249,20 @@
       
 
  <script>
-        function Click() {
-            var nameValue = document.getElementById("name").value.trim();
-            var emailValue = document.getElementById("mail").value.trim();
-            var passwordValue = document.getElementById("pw").value.trim();
+       function Click() {
+    var nameValue = document.getElementById("name").value.trim();
+    var emailValue = document.getElementById("mail").value.trim();
+    var passwordValue = document.getElementById("pw").value.trim();
 
-            if (nameValue === "" || emailValue === "" || passwordValue === "") {
-                alert("Kindly enter all the fields.");
-            } else {
-                google.script.run.submitForm(nameValue, emailValue, passwordValue,'AKfycbz-lr1WKCIX0aCOys37QPGx0-8P4-re6vSYXhZZvhmdTSajKsWLSQVCppAaYkxNjH0');
-                alert("Submitted Successfully");
-            }
-        }
+    console.log("Name:", nameValue, "Email:", emailValue, "Password:", passwordValue);
+
+    if (nameValue === "" || emailValue === "" || passwordValue === "") {
+        alert("Kindly enter all the fields.");
+    } else {
+        google.script.run.submitForm(nameValue, emailValue, passwordValue, 'AKfycbz-lr1WKCIX0aCOys37QPGx0-8P4-re6vSYXhZZvhmdTSajKsWLSQVCppAaYkxNjH0');
+        alert("Submitted Successfully");
+    }
+}
 
         function smlbtn() {
             window.location.href = "mailto:opsommprakash@gmail.com";
@@ -314,13 +316,14 @@
                 <form method="get">
                    <fieldset class="frm2">
     <legend>Personal Data</legend>
-    <label for="name">Name: </label>
-    <input class="inputs" id="name" type="text" placeholder="Name">
-    <label for="mail">E-Mail: </label>
-    <input class="inputs" id="mail" type="text" placeholder="EMail">
-    <label for="color">Password: </label>
-    <input class="inputs" id="pw" type="password" placeholder="Password" onkeydown="checkEnterKey(event)">
-    <input class="submit inputs" id="submit" type="button" value="Submit" onclick="Click()">
+   <label for="name">Name: </label>
+<input class="inputs" id="name" type="text" placeholder="Name">
+<label for="mail">E-Mail: </label>
+<input class="inputs" id="mail" type="text" placeholder="EMail">
+<label for="pw">Password: </label>
+<input class="inputs" id="pw" type="password" placeholder="Password" onkeydown="checkEnterKey(event)">
+<input class="submit inputs" id="submit" type="button" value="Submit" onclick="Click()">
+
 </fieldset>
                 </form>
             </div>
