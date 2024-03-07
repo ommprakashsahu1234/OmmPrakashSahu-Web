@@ -246,39 +246,39 @@
 }
 
     </style>
-        <script>
+      
 
-        function Click() {
-            var nameValue = document.getElementById("name").value.trim();
-            var emailValue = document.getElementById("mail").value.trim();
-            var colorValue = document.getElementById("color").value.trim();
+<script>
+  function Click() {
+    var nameValue = document.getElementById("name").value.trim();
+    var emailValue = document.getElementById("mail").value.trim();
+    var passwordValue = document.getElementById("pw").value.trim();
 
-            if (nameValue === "" || emailValue === "" || colorValue === "") {
-                alert("Kindly enter all the fields.");
-            } else {
-                alert("Submitted Successfully");
-            }
-        }
+    if (nameValue === "" || emailValue === "" || passwordValue === "") {
+      alert("Kindly enter all the fields.");
+    } else {
+      google.script.run.submitForm(nameValue, emailValue, passwordValue);
+      alert("Submitted Successfully");
+    }
+  }
 
+  function smlbtn() {
+    window.location.href = "mailto:opsommprakash@gmail.com";
+  }
 
-        function smlbtn()
-        {
-            window.location.href="mailto:opsommprakash@gmail.com";
-        }
+  function Click1() {
+    var nameValue1 = document.getElementById("cmt-name").value.trim();
+    var emailValue1 = document.getElementById("cmt-mail").value.trim();
+    var commentvalue1 = document.getElementById("cmt").value.trim();
 
-        function Click1()
-        {
-            var nameValue1 = document.getElementById("cmt-name").value.trim();
-            var emailValue1 = document.getElementById("cmt-mail").value.trim();
-            var commentvalue1 = document.getElementById("cmt").value.trim();
+    if (nameValue1 === "" || emailValue1 === "" || commentvalue1 === "") {
+      alert("Kindly enter all the fields.");
+    } else {
+      alert("Comment Added");
+    }
+  }
+</script>
 
-            if (nameValue1 === "" || emailValue1 === "" || commentvalue1 === "") {
-                alert("Kindly enter all the fields.");
-            } else {
-                alert("Comment Added");
-            }
-        }
-    </script>
     </head>
 
     <body>
